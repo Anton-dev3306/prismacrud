@@ -1,24 +1,26 @@
-# 🚀 DevBlog · Plataforma de Publicaciones de la Comunidad
+# 📚 Prisma ORM Exploration · Proyecto Inicial / Maqueta CRUD
 
-Aplicación web full-stack tipo Blog / CRUD construida con **Next.js (App Router)**, **TypeScript**, **Tailwind CSS** y **Prisma ORM** respaldado por una base de datos **PostgreSQL**.
+Este repositorio es un **proyecto inicial y maqueta conceptual** diseñado para explorar y poner en práctica las bases de **Prisma ORM** junto con **Next.js (App Router)**, **TypeScript** y **Tailwind CSS**.
 
-Diseñada con un enfoque limpio y moderno de UX/UI enfocado en legibilidad, jerarquía tipográfica y rendimiento visual.
+El objetivo principal de este proyecto es servir como un entorno de aprendizaje para modelar relaciones, estructurar esquemas de base de datos relacionales (PostgreSQL) y maquetar una interfaz de usuario limpia para un sistema básico de publicaciones/blog.
 
 ---
 
-## 🎨 Sistema de Diseño (UX/UI)
+## 🎨 Sistema de Diseño y Maquetación (UX/UI)
 
-- **Tipografía Principal:** `Heebo` (Medium / Bold) — Identidad principal, encabezados e interfaz de usuario.
-- **Tipografía Secundaria / Monospace:** `Lekton` (Regular) — Metadatos, fechas, usernames, siglas y etiquetas técnicas.
+Para la maquetación visual de las vistas se utilizó una paleta moderna y refinada:
+
+- **Tipografía Principal:** `Heebo` (Medium / Bold) — Utilizada para la interfaz, encabezados e identidad principal.
+- **Tipografía Secundaria / Monospace:** `Lekton` (Regular) — Utilizada para metadatos, usernames, fechas y detalles técnicos.
 - **Paleta de Colores:**
-  - **Color Principal / Acentuado (`#0F172A`):** Navegación, encabezados, botones de acción primaria y elementos interactivos.
-  - **Color de Fondo / Superficie (`#F8FAFC`):** Fondos limpios, tarjetas elevadas y contenedores de formularios.
+  - **Color Principal / Acentuado (`#0F172A`):** Navegación, encabezados, botones y acentos.
+  - **Color de Fondo / Superficie (`#F8FAFC`):** Fondos limpios, tarjetas y contenedores de formularios.
 
 ---
 
-## 📸 Vista Previa del Sistema
+## 📸 Vista Previa de la Maqueta
 
-| Vista Principal (Dashboard) | Nueva Publicación |
+| Vista Principal (Dashboard) | Formulario de Nueva Publicación |
 | :---: | :---: |
 | ![Dashboard Principal](./docs/dashboard.png) | ![Crear Publicación](./docs/new-post.png) |
 
@@ -26,24 +28,13 @@ Diseñada con un enfoque limpio y moderno de UX/UI enfocado en legibilidad, jera
 | :---: | :---: |
 | ![Login](./docs/login.png) | ![Register](./docs/register.png) |
 
-> *Nota: Asegúrate de guardar tus capturas de pantalla en la carpeta `docs/` con los nombres `dashboard.png`, `new-post.png`, `login.png` y `register.png`.*
+> *Nota: Para mostrar las imágenes, coloca las capturas de pantalla en una carpeta llamada `docs/` en la raíz de tu proyecto con los nombres `dashboard.png`, `new-post.png`, `login.png` y `register.png`.*
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## 🗄️ Exploración de Modelos con Prisma ORM
 
-- **Framework:** Next.js 16 (App Router + React Server Components)
-- **Lenguaje:** TypeScript
-- **ORM:** Prisma ORM v7
-- **Base de Datos:** PostgreSQL
-- **Estilos:** Tailwind CSS v3
-- **Paquetes:** `pnpm` (Gestor de dependencias)
-
----
-
-## 🗄️ Modelo de Datos y Esquema Prisma
-
-El modelo relacional soporta autenticación, publicaciones, categorización, interacciones (comentarios, reacciones, marcadores) y red de seguidores.
+En este proyecto inicial se exploran las relaciones entre entidades clave (usuarios, publicaciones, comentarios, reacciones, seguimiento y categorías) mediante el siguiente esquema de Prisma (`schema.prisma`):
 
 ```prisma
 enum PostStatus {
