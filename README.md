@@ -1,4 +1,4 @@
-# 📚 Prisma ORM Exploration · Proyecto Inicial / Maqueta CRUD
+# 📚 Prisma ORM Exploration 
 
 Este repositorio es un **proyecto inicial y maqueta conceptual** diseñado para explorar y poner en práctica las bases de **Prisma ORM** junto con **Next.js (App Router)**, **TypeScript** y **Tailwind CSS**.
 
